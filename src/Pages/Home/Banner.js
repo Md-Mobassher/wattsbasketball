@@ -35,14 +35,12 @@ const Banner = ({ videoId }) => {
   }, [videoId]);
 
   return (
-    <div className="banner h-screen w-">
+    <div className="banner h-screen relative">
       <div className="video-container h-full absolute inset-0 overflow-hidden ">
         <div className="video h-full" ref={playerRef}></div>
       </div>
 
-      <div className="absolute inset-0 opacity-10"></div>
-
-      <div className="banner-content flex justify-center items-center">
+      <div className=" banner-content flex justify-center items-center">
         <BannerText />
       </div>
 
