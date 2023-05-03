@@ -12,7 +12,7 @@ const Banner = ({ videoId }) => {
         <div className="video h-full" ref={playerRef}></div>
       </div>
 
-      <div className="absolute  banner-content lg:flex flex-row justify-center items-center">
+      <div className="absolute  banner-content ">
         <BannerText />
       </div>
 
