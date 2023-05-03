@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import BannerText from './BannerText';
+import { useEffect, useRef } from 'react';
 
-const Banner = ({ videoId }) => {
-  const playerRef = useRef(null);
+const useVideoBackground = (videoId) => {
+    const playerRef = useRef(null);
 
   useEffect(() => {
     const tag = document.createElement('script');
@@ -34,18 +33,7 @@ const Banner = ({ videoId }) => {
     };
   }, [videoId]);
 
-  return (
-    <div className="banner h-screen relative">
-      <div className="video-container h-full absolute inset-0 overflow-hidden ">
-        <div className="video h-full" ref={playerRef}></div>
-      </div>
-
-      <div className=" banner-content flex justify-center items-center">
-        <BannerText />
-      </div>
-
-    </div>
-  );
+  return playerRef;
 };
 
-export default Banner;
+export default useVideoBackground;
