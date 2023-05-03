@@ -7,12 +7,12 @@ const Banner = ({ videoId }) => {
 
 
   return (
-    <div className="banner h-screen relative">
+    <div className="banner min-h-screen relative">
       <div className="video-container h-full absolute inset-0 overflow-hidden ">
         <div className="video h-full" ref={playerRef}></div>
       </div>
 
-      <div className=" banner-content flex justify-center items-center">
+      <div className="absolute  banner-content lg:flex flex-row justify-center items-center">
         <BannerText />
       </div>
 

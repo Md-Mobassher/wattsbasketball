@@ -1,14 +1,14 @@
 import React from 'react'
 import Banner from './BannerSection'
 import SkillTrainingSection from './SkillTrainingSection'
-import ExpertCoatchSection from './ExpertCoatchSection'
+import ExpertCoachSection from './ExpertCoachSection'
 
 const Home = () => {
   return (
     <>
       <Banner videoId='uuSj5EW6ELA' />  
       <SkillTrainingSection />
-      <ExpertCoatchSection videoId='uuSj5EW6ELA' />
+      <ExpertCoachSection videoId='uuSj5EW6ELA' />
     </>
   )
 }

@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 
 const useVideoBackground = (videoId) => {
     const playerRef = useRef(null);
+    console.log(videoId);
 
   useEffect(() => {
     const tag = document.createElement('script');
