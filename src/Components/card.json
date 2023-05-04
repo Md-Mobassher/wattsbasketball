@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Training",
+        "img": "../Assets/card/training.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Camps & ",
+        "img": "../Assets/card/camps.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Teams",
+        "img": "../Assets/card/teams.jpeg"
+    }
+]
