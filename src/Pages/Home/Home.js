@@ -5,6 +5,7 @@ import ExpertCoachSection from './ExpertCoachSection'
 import TrainingFocusedSection from './TrainingFocusedSection'
 import TestimonialSection from './TestimonialSection'
 import CardSection from './CardSection'
+import SliderSection from './SliderSection'
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
       <TrainingFocusedSection />
       <TestimonialSection />
       <CardSection />
-
+      <SliderSection />
     </>
   )
 }
