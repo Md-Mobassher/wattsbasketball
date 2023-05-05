@@ -9,15 +9,15 @@ import SliderSection from './SliderSection'
 
 const Home = () => {
   return (
-    <>
-      <Banner videoId='uuSj5EW6ELA' />  
+    <div className=''>
+      <Banner  />  
       <SkillTrainingSection />
-      <ExpertCoachSection videoId='41yiOpkqT9I'  />
+      <ExpertCoachSection />
       <TrainingFocusedSection />
       <TestimonialSection />
       <CardSection />
       <SliderSection />
-    </>
+    </div>
   )
 }
 
