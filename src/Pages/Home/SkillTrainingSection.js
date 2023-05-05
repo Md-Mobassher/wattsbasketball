@@ -1,14 +1,15 @@
 import React from 'react'
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 
+import basketball from  '../../Assets/ball.png'
+
 const SkillTraining = () => {
   return (
     <section className='hero min-h-screen bg-gradient-to-tr from-blue-900 to-indigo-800'>
      <div className='hero-content flex-col lg:flex-row'>
         <div className='basis-1/2 mask mask-circle flex justify-center items-center h-full'>
-            <div className='border-8  border-yellow-500  rounded-full lg:w-[30rem] lg:h-[30rem] md:w-80 md:h-80	w-80 h-80'>
-            <img class="mask mask-circle" src="/images/stock/photo-1567653418876-5bb0e566e1c2.jpg" alt='img' />
-            </div>
+           
+            <img class="mask mask-circle text-white" src={basketball} alt='Basketball' />
             
         </div>
         <div className='basis-1/2'>

@@ -5,7 +5,7 @@ import training from '../../Assets/practice.gif'
 
 const TrainingFocusedSection = () => {
   return (
-    <section className="hero min-h-screen bg-[#0F0E0E]">
+    <section className="hero min-h-screen bg-[#0F0E0E] sm:py-10">
       <div className="hero-content flex-col lg:flex-row p-0 m-0">
         <div className="basis-1/2 flex justify-center items-center h-full">
           <img className="flex cover" src={training} alt='Training' />
@@ -26,7 +26,7 @@ const TrainingFocusedSection = () => {
               A training academy, first and foremost.
             </p>
 
-            <p className="lg:text-2xl text-xl text-yellow-400 text-center mt-5">
+            <p className="lg:text-2xl text-xl text-yellow-400 text-center lg:mt-5 mt-3">
               Your growth is our most important <br /> goal.
             </p>
           </div>

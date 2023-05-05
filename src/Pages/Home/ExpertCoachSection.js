@@ -26,23 +26,23 @@ const ExpertCoachSection = () => {
      
       </video>
 
-      <div className="expert-content">
+      <div className="expert-content w-full">
 
-      <div class="max-w-lg">
-          <h2 className="lg:text-7xl text-4xl font-sans font-semibold text-white text-center">
+      <div class=" w-full">
+          <h2 className="lg:text-7xl md:text-5xl text-4xl font-sans font-semibold text-white text-center">
             Expert Coaches
           </h2>
 
-          <div className="border-2 text-white w-3/4 lg:mb-7 mt-10 rounded mx-auto "></div>
+          <div className="border-2 text-white w-3/4 lg:mb-7 lg:mt-10 my-4  rounded mx-auto "></div>
 
           <div className="">
-            <p className="text-2xl font-semibold text-white text-center">
-              Accomplished, experienced{" "}
+            <p className="lg:text-2xl text-xl font-semibold text-white text-center">
+              Accomplished, experienced
             </p>
-            <p className="text-2xl font-semibold text-white text-center">
+            <p className="lg:text-2xl text-xl font-semibold text-white text-center">
               & passionate.
             </p>
-            <p className="text-2xl font-semibold text-white text-center mt-4">
+            <p className="lg:text-2xl text-xl font-semibold text-white text-center lg:mt-4 mt-2">
               Your success is our success.
             </p>
           </div>
