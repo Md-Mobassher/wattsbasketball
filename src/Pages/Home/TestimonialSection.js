@@ -37,7 +37,7 @@ const TestimonialSection = () => {
             Proven Success
           </h2>
 
-          <div className="border-2 text-white lg:w-3/4 w-1/2 lg:mb-7 lg:mt-10 my-4 rounded mx-auto "></div>
+          <div className="border-2 text-white w-3/4  lg:mb-7 lg:mt-10 my-4 rounded mx-auto "></div>
 
           <div className="">
             <p className="lg:text-2xl text-xl font-semibold text-white text-center">
