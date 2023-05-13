@@ -19,7 +19,7 @@ const TestimonialSection = () => {
         <img src={bannerImage} alt="banner" />
       )}
       <video
-      className="bg-cover "
+      className="bg-cover banner_video_full"
         autoPlay
         muted
         loop

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
-import bannerImage from '../../Assets/banner/bannerImg.png'
-import bannerVideo from '../../Assets/banner/basketball.mp4'
+import coachImage from '../../Assets/ExpertCoatch/coach.png'
+import coachVideo from '../../Assets/ExpertCoatch/coach.mp4'
 
 
 const ExpertCoachSection = () => {
@@ -11,7 +11,7 @@ const ExpertCoachSection = () => {
   return (
     <div className="banner min-h-screen">
       {!videoLoaded && (
-        <img src={bannerImage} alt="banner" />
+        <img src={coachImage} alt="banner" />
       )}
       <video
       className=" banner_video_full"
@@ -19,10 +19,10 @@ const ExpertCoachSection = () => {
         muted
         loop
         playsInline
-        poster={bannerImage}
+        poster={coachImage}
         onLoadedData={() => setVideoLoaded(true)}
       >
-        <source src={bannerVideo} type="video/mp4" />
+        <source src={coachVideo} type="video/mp4" />
      
       </video>
 
