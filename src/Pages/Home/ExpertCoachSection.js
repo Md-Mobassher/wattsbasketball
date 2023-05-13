@@ -14,7 +14,7 @@ const ExpertCoachSection = () => {
         <img src={bannerImage} alt="banner" />
       )}
       <video
-      className="bg-cover "
+      className=" banner_video_full"
         autoPlay
         muted
         loop
