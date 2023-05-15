@@ -6,6 +6,7 @@ import TrainingFocusedSection from './TrainingFocusedSection'
 import TestimonialSection from './TestimonialSection'
 import CardSection from './CardSection'
 import SliderSection from './SliderSection'
+import AgeSection from './AgeSection'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <TrainingFocusedSection />
       <TestimonialSection />
       <CardSection />
+      <AgeSection />
       <SliderSection />
     </div>
   )
