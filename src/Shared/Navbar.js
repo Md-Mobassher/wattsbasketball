@@ -1,93 +1,107 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineAppstore } from "react-icons/ai";
+
+import player from "../Assets/teams.jpg";
 
 const Navbar = ({ children }) => {
-  const mobileMenuItem = (
-    <>
-      <li>
-        <Link className="rounded-lg" to="/about">
-          About
-        </Link>
-      </li>
-      <li>
-        <Link className="rounded-lg" to="/people">
-          People
-        </Link>
-      </li>
-      <li>
-        <Link className="rounded-lg" to="/publications">
-          Publications
-        </Link>
-      </li>
-      <li>
-        <Link className="rounded-lg" to="/resource">
-          Resources
-        </Link>
-      </li>
-      <li>
-        <Link className="rounded-lg" to="/more">
-          More
-        </Link>
-      </li>
-    </>
-  );
+  const [showDiv, setShowDiv] = useState(false);
+
+  const handleMouseOver = () => {
+    setShowDiv(true);
+  };
+
+  const handleMouseOut = () => {
+    setShowDiv(false);
+  };
 
   return (
-    <div>
-      <div class="drawer drawer-end ">
-        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content flex flex-col">
-          <div class="w-full navbar sticky top-0 lg:px-10 shadow-md  z-20">
-            <div class="flex-1 text-4xl font-semibold px-2 mx-2">
-              <Link to="/">NGIT</Link>
-            </div>
-            <div class="flex-none lg:hidden">
-              <label for="my-drawer-3" class="btn btn-square btn-ghost">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  class="inline-block w-6 h-6 stroke-current "
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-              </label>
-            </div>
-
-{/* for laptop  */}
-            <div class="flex-none hidden lg:block">
-              <ul class="menu menu-horizontal">
-                <li>
-                  <Link className="rounded-lg" to="/resource">
-                    Resources
-                  </Link>
-                </li>
-                <li>
-                  <Link className="rounded-lg" to="/more">
-                    More
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {children}
-        </div>
-
-        {/* for mobile */}
-        <div class="drawer-side">
-          <label for="my-drawer-3" class="drawer-overlay"></label>
-          <ul class="menu menu-varticle p-4 overflow-y-auto w-100 bg-base-100">
-            {mobileMenuItem}
-          </ul>
+    <nav className="">
+      {/* larger device */}
+      <div className="hidden fixed top-0 right-0 z-50 overflow-hidden   lg:block md:block mr-3 ">
+        <div className="  flex overflow-hidden ">
+          <p className="h-6 hover:h-12 bg-red-500 hover:bg-white px-2 hover:py-3 text-white hover:text-red-500 rounded-b-lg hover:cursor-pointer mr-2 shadow-lg border-b-2 border-b-red-800  border-l-1 ">
+            Home
+          </p>
+          <p className="h-6 hover:h-12 bg-red-500 hover:bg-white px-2 hover:py-3 text-white hover:text-red-500 rounded-b-lg hover:cursor-pointer mr-2 shadow-lg border-b-2 border-b-red-800  border-l-1 ">
+            Register
+          </p>
+          <p
+            onMouseOver={handleMouseOver}
+            className="h-6 bg-red-500 hover:bg-white px-2 text-white hover:text-red-500 rounded-b-lg  hover:cursor-pointer border-b-2 border-b-red-800 shadow-lg "
+          >
+            Explore
+          </p>
         </div>
       </div>
-    </div>
+
+      {showDiv && (
+        <div onMouseLeave={handleMouseOut}>
+          <div class=" py-10 pt-10 px-5 lg:w-4/5 w-full bg-white fixed top-0 right-0 z-10 rounded-bl-2xl">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+              <Link className="hover:bg-red-600 px-4 py-2 hover:shadow-lg rounded-lg hover:text-white ">
+                <div class="avatar flex justify-start items-center gap-2">
+                  <div class="lg:w-24 w-16 rounded-full ">
+                    <img src={player} alt="avatar" />
+                  </div>
+                  <p className="lg:text-2xl text-xl font-semibold">Training</p>
+                </div>
+              </Link>
+              <Link className="hover:bg-red-600 px-4 py-2 hover:shadow-lg rounded-lg hover:text-white ">
+                <div class="avatar flex justify-start items-center gap-2">
+                  <div class="lg:w-24 w-16 rounded-full ">
+                    <img src={player} alt="avatar" />
+                  </div>
+                  <p className="lg:text-2xl text-xl font-semibold">Teams</p>
+                </div>
+              </Link>
+              <Link className="hover:bg-red-600 px-4 py-2 hover:shadow-lg rounded-lg hover:text-white ">
+                <div class="avatar flex justify-start items-center gap-2">
+                  <div class="lg:w-24 w-16 rounded-full ">
+                    <img src={player} alt="avatar" />
+                  </div>
+                  <p className="lg:text-2xl text-xl font-semibold">
+                    Camps & Clinic
+                  </p>
+                </div>
+              </Link>
+              <Link className="hover:bg-red-600 px-4 py-2 hover:shadow-lg rounded-lg hover:text-white ">
+                <div class="avatar flex justify-start items-center gap-2">
+                  <div class="lg:w-24 w-16 rounded-full ">
+                    <img src={player} alt="avatar" />
+                  </div>
+                  <p className="lg:text-2xl text-xl font-semibold">Coaches</p>
+                </div>
+              </Link>
+              <Link className="hover:bg-red-600 px-4 py-2 hover:shadow-lg rounded-lg hover:text-white ">
+                <div class="avatar flex justify-start items-center gap-2">
+                  <div class="lg:w-24 w-16 rounded-full ">
+                    <img src={player} alt="avatar" />
+                  </div>
+                  <p className="lg:text-2xl text-xl font-semibold">About</p>
+                </div>
+              </Link>
+              <Link className="hover:bg-red-600 px-4 py-2 hover:shadow-lg rounded-lg hover:text-white ">
+                <div class="avatar flex justify-start items-center gap-2">
+                  <div class="lg:w-24 w-16 rounded-full ">
+                    <img src={player} alt="avatar" />
+                  </div>
+                  <p className="lg:text-2xl text-xl font-semibold">FAQs</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* small device */}
+      <div
+        onClick={handleMouseOver}
+        className="block fixed top-3 right-3 z-50 overflow-hidden   lg:hidden md:hidden text-gray-300 p-2 hover:cursor-pointer hover:bg-gray-500 rounded-lg"
+      >
+        <AiOutlineAppstore className=" w-7 h-7  " />
+      </div>
+    </nav>
   );
 };
 
