@@ -33,20 +33,20 @@ const TestimonialSection = () => {
 
       <div class="expert-content flex justify-center items-center w-full">
         <div class="max-w-lg ">
-          <h2 className="lg:text-7xl md:text-5xl text-4xl font-sans font-semibold text-white text-center">
+          <h2 className="lg:text-7xl md:text-5xl text-4xl font_heading font-semibold text-white text-center">
             Proven Success
           </h2>
 
           <div className="border-2 text-white w-3/4  lg:mb-7 lg:mt-10 my-4 rounded mx-auto "></div>
 
           <div className="">
-            <p className="lg:text-2xl text-xl font-semibold text-white text-center">
+            <p className="lg:text-2xl text-xl font-semibold text-white text-center font_para">
               Our athletes and parents tell our
             </p>
-            <p className="lg:text-2xl text-xl font-semibold text-white text-center">
+            <p className="lg:text-2xl text-xl font-semibold text-white text-center font_para">
               story best.
             </p>
-            <p className="lg:text-2xl text-xl font-semibold text-white text-center mt-4">
+            <p className="lg:text-2xl text-xl font-semibold text-white text-center mt-4 font_para">
               Watch the video.
             </p>
           </div>

@@ -10,6 +10,9 @@ const Navbar = ({ children }) => {
   const handleMouseOver = () => {
     setShowDiv(true);
   };
+  const handleToggle = () => {
+    setShowDiv((prev) => !prev);
+  };
 
   const handleMouseOut = () => {
     setShowDiv(false);
@@ -96,10 +99,13 @@ const Navbar = ({ children }) => {
 
       {/* small device */}
       <div
-        onClick={handleMouseOver}
-        className="block fixed top-3 right-3 z-50 overflow-hidden   lg:hidden md:hidden text-gray-300 p-2 hover:cursor-pointer hover:bg-gray-500 rounded-lg"
+        onClick={handleToggle}
+        className="block fixed top-3 right-3 z-50 overflow-hidden   lg:hidden md:hidden text-gray-200 p-2 hover:cursor-pointer hover:bg-gray-500 hover:text-white rounded-lg"
       >
-        <AiOutlineAppstore className=" w-7 h-7  " />
+        {
+          showDiv ? <p className=" text-center font-semibold text-xl px-2">X</p> : <AiOutlineAppstore className=" w-7 h-7  " />
+        }
+        
       </div>
     </nav>
   );

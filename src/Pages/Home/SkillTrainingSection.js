@@ -40,28 +40,28 @@ const SkillTraining = () => {
             {/* <FaDribbble className='w-96 h-96 text- text-white' /> */}
           </div>
           <div  className="basis-1/2 flex flex-col justify-end flex-grow">
-            <h2 className="lg:text-7xl md:text-5xl text-4xl font-sans font-semibold text-[#FEBA11] text-center">
+            <h2 className="lg:text-7xl md:text-5xl text-4xl font_heading font-semibold text-[#FEBA11] text-center">
               Skills Training
             </h2>
-            <h2 className="lg:text-7xl md:text-5xl text-4xl  lg:mt-5 mt-2 font-sans font-semibold text-[#FEBA11] text-center">
+            <h2 className="lg:text-7xl md:text-5xl text-4xl  lg:mt-5 mt-2 font_heading font-semibold text-[#FEBA11] text-center">
               & Team Play
             </h2>
 
             <div className="border-2 border-yellow-500 w-3/4 lg:my-10 my-5 rounded mx-auto "></div>
 
             <div className="lg:px-20 md:px-10 px-5">
-              <p className="lg:text-2xl text-xl text-yellow-400 text-center">
+              <p className="lg:text-2xl text-xl text-yellow-400 text-center font_para">
                 Based on fundamentals, hard work, teamwork & sportsmanship. For
                 athletes at all levels. Success is a habit.
               </p>
             </div>
             <div className="text-yellow-400 lg:flex justify-center items-center lg:mt-10 mt-5 mx-auto lg:x-20">
-              <button className="lg:mr-10 flex justify-center items-center lg:gap-2 gap-1 hover:  mx-auto">
+              <button className="lg:mr-10 flex justify-center items-center lg:gap-2 gap-1 hover:  mx-auto font_para">
                 {" "}
                 <a href="/">Learn about training</a> <BsBoxArrowUpRight />{" "}
               </button>
 
-              <button className="lg:mr-10 mt-3 lg:mt-0 flex justify-center items-center lg:gap-2 gap-1 hover:  mx-auto">
+              <button className="lg:mr-10 mt-3 lg:mt-0 flex justify-center items-center lg:gap-2 gap-1 hover:  mx-auto font_para">
                 {" "}
                 <a href="/">Learn about team play</a> <BsBoxArrowUpRight />{" "}
               </button>

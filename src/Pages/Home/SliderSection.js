@@ -16,7 +16,7 @@ import player8 from "../../Assets/player/player8.jpg";
 
 const SliderSection = () => {
   return (
-    <section className="bg-black lg:py-20 py-5">
+    <section className="bg-black lg:py-10 py-5">
       <Swiper
         modules={[Autoplay, EffectFlip]}
         spaceBetween={0}
